@@ -46,13 +46,74 @@ var _y = 2; // Avoid using var
 - dynamic size
 - can store diff data types
 
-#### `const` arrays
-
 ```js
 const cars = ["a", "b", "c"]
 cars[0] = "d" // change the element
 cards.push("e") // adds an element
 ```
+
+- `toString()`
+
+```js
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+```
+
+- Last Array
+```js
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits[fruits.length - 1];
+```
+
+- Looping through the array
+```js
+const fruits = ["Banana", "Orange", "Apple", "Mango"]
+let fLen = fruits.length;
+
+let text = "<ul>"
+for (let i=0; i< fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>"
+
+// OR ANOTHER WAY
+let text = "<ul>";
+fruits.forEach(myFunction);
+text += "</ul>"
+
+function myFunction(value) {
+  text += "<li>" + value + "</li>";
+}
+```
+
+- Add elements
+```js
+fruits.push("Lemon"); // at the end
+fruits[fruits.length] = "Lemon"; // at the end
+
+```
+
+
+
+### Dictionaries
+
+```js
+const person = {
+  firstName: "Arnav",
+  lastName: "Raina",
+  age: 46
+};
+
+person.length; // length
+person.sort() // sorting
+```
+
+
+
+
+
+
+
 
 
 
